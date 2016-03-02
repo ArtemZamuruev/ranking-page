@@ -1,0 +1,25 @@
+@font-face{
+	font-family: HelveticaNeueCyrBold;
+	src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.otf) format("opentype");	
+}
+@font-face{
+	font-family: HelveticaNeueCyrRoman;
+	src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.otf) format("opentype");	
+}
+@font-face{
+	font-family: HelveticaNeueCyrLight;
+	src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.otf) format("opentype");	
+}
+@font-face{
+	font-family: HelveticaNeueCyrMedium;
+	src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.otf) format("opentype");	
+}
+@font-face{
+	font-family: HelveticaNeueCyrUltraLight;
+	src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-UltraLight.otf) format("opentype");	
+}
+
+@font-face{
+	font-family: MyriadProRegular;
+	src: url(../fonts/MyriadPro/MyriadPro-Regular.otf) format("opentype");	
+}
