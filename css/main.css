@@ -7,7 +7,7 @@ header{
 }
 
 hr{
-	
+
 }
 
 /* Header */
@@ -181,5 +181,43 @@ div.button.onpage-technical div.button-text{
 div.button.onpage-content div.button-text{
 	color: #73caf1;
 }
+
+/* END */
+
+
+/* Main container */
+
+div.main-container{
+	padding: 40px 30px;
+}
+
+div.rows-stack{
+	width:100%;
+	margin-top: 50px;
+}
+
+div.row{
+	height:30px;
+	width: 100%;
+	margin-top: 30px;
+}
+
+div.row-description,
+div.row-value{
+	height: 30px;
+	display: inline-block;
+	float: left;
+
+	border: 1px dashed black;
+}
+
+div.row-description{
+	width: 44%;
+}
+div.row-value{
+	max-width: 55%;
+}
+
+
 
 /* END */
