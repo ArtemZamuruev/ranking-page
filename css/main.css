@@ -199,7 +199,7 @@ div.rows-stack{
 div.row{
 	height:30px;
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 
 div.row-description,
@@ -208,16 +208,40 @@ div.row-value{
 	display: inline-block;
 	float: left;
 
-	border: 1px dashed black;
+	/*border: 1px dashed black;*/
 }
 
 div.row-description{
-	width: 44%;
+	width: 45%;
 }
 div.row-value{
-	max-width: 55%;
+	width: 55%;	
 }
 
+
+div.row-description p{
+	float:right;
+}
+
+/* Row appearence */
+
+div.row.user-signals div.row-value{
+	background-color: #e97470;
+}
+div.row.social div.row-value{
+	background-color: #f4a943;
+}
+div.row.backlinks div.row-value{
+	background-color: #7cc0d1;
+}
+div.row.onpage-technical div.row-value{
+	background-color: #6cb867;
+}
+div.row.onpage-content div.row-value{
+	background-color: #73caf1;
+}
+
+/* END */
 
 
 /* END */
