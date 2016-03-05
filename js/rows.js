@@ -2,7 +2,8 @@ var rows = [
 	{
 		"name" 		: "Click-Through Rate",
 		"category" 	: "user-signals",
-		"value"		: "0.67"
+		"value"		: "0.39",
+		"val-number": "0.67"
 	},
 	{
 		"name" 		: "Relevant terms",

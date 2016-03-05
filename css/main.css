@@ -7,7 +7,8 @@ header{
 }
 
 hr{
-
+	background-color: #e1e1e1;
+	color: #e1e1e1;
 }
 
 /* Header */
@@ -188,12 +189,44 @@ div.button.onpage-content div.button-text{
 /* Main container */
 
 div.main-container{
-	padding: 40px 30px;
+	padding: 40px 3%;
 }
 
+/* Background grid layer */
+
+/*div.grid-background{
+	position: relative;
+	z-index: 1;
+	width: 100%;
+}*/
+
+div.grid-background{
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+}
+
+div.grid-background div.vertical-line{
+	display: inline-block;
+	float: left;
+	height:100%;
+	width: 1px;
+	background-color: #e1e1e1;
+	margin-left: 7.568327188%;
+}
+
+
+div.grid-background div.vertical-line.first{
+	margin-left: 0;
+}
+
+/* END */
+
 div.rows-stack{
+	position: relative;
 	width:100%;
 	margin-top: 50px;
+	z-index: 2;
 }
 
 div.row{
@@ -219,8 +252,17 @@ div.row-value{
 }
 
 
-div.row-description p{
+div.row-description p,
+div.row-value p{
 	float:right;
+}
+
+div.row-value p{
+	font-family: HelveticaNeueCyrLight;
+	font-size: 1.5em;
+	font-weight: 300;
+	margin: 3px 5px 0px 0px;
+	color: #fff;
 }
 
 /* Row appearence */
