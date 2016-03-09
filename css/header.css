@@ -1,0 +1,141 @@
+/*
+    Document   : css/header.css
+    Created on : 2016-03-09 07:54 PM
+    Author     : ArtemZamuruev
+    Description: NEW header CSS
+*/
+
+header{
+    position: fixed;
+    top: 0px;
+	padding: 10px 10px 5px 10px;
+    z-index: 5;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #929292;
+}
+
+div.buttons-block{
+	display:inline-block;
+}
+
+/* Buttons block */
+div.buttons-block{
+	float: left;
+}
+
+/* END */
+
+/* Buttons appearence */
+
+div.buttons-block div.button{
+    display:inline-block; 
+	margin-left:20px;
+    height:48px;
+    width:200px;
+    
+}
+
+div.button div.button-icon-circle,
+div.button div.button-text{
+	display: inline;
+}
+
+div.button div.button-icon-circle,
+div.button div.button-icon{
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+div.button div.button-icon-circle{
+	width: 48px;
+	height: 48px;
+	float:left;
+}
+div.button div.button-icon{
+	width:32px;
+	height:32px;
+	position: relative;
+}
+
+div.button.user-signals div.button-icon-circle{
+	background-image: url(../img/usersignals-icon-circle.png);
+}
+div.button.user-signals div.button-icon{
+	background-image: url(../img/usersignals-icon.png);
+	left: 8px;
+	top: 5px;
+}
+
+div.button.social div.button-icon-circle{
+	background-image: url(../img/social-icon-circle.png);
+}
+div.button.social div.button-icon{
+	background-image: url(../img/social-icon.png);
+	left: 11px;
+	top: 11px;
+}
+
+div.button.backlinks div.button-icon-circle{
+	background-image: url(../img/backlinks-icon-circle.png);
+}
+div.button.backlinks div.button-icon{
+	background-image: url(../img/backlinks-icon.png);
+	width: 40px;
+	left: 4px;
+	top: 21px;
+}
+
+div.button.onpage-technical div.button-icon-circle{
+	background-image: url(../img/onpage-technical-icon-circle.png);
+}
+div.button.onpage-technical div.button-icon{
+	background-image: url(../img/onpage-technical-icon.png);
+	left: 8px;
+	top: 11px;
+}
+
+div.button.onpage-content div.button-icon-circle{
+	background-image: url(../img/onpage-content-icon-circle.png);
+}
+div.button.onpage-content div.button-icon{
+	background-image: url(../img/onpage-content-icon.png);
+	left: 11px;
+	top: 6px;
+}
+
+div.button div.button-text{
+	margin-left: 8px;
+	margin-top: 18px;
+	float:left;
+	
+	font-family: HelveticaNeueCyrBold;
+	font-weight:700;
+	font-size:0.9em;
+
+	text-align: left;
+
+}
+
+div.button.user-signals div.button-text,
+div.row.user-signals div.row-description{
+	color: #e97470;
+}
+div.button.social div.button-text,
+div.row.social div.row-description{
+	color: #f4a943;
+}
+div.button.backlinks div.button-text,
+div.row.backlinks div.row-description{
+	color: #478da1;
+}
+div.button.onpage-technical div.button-text,
+div.row.onpage-technical div.row-description{
+	color: #3fa138;
+}
+div.button.onpage-content div.button-text,
+div.row.onpage-content div.row-description{
+	color: #25a5db;
+}
+
+/* END */

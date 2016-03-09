@@ -2,199 +2,26 @@ div.clearfix{
 	clear:both;
 }
 
-header{
-	padding: 30px 30px 10px 30px;
-}
-
 hr{
 	background-color: #e1e1e1;
 	color: #e1e1e1;
 }
 
-/* Header */
-
-div.text-block,
-div.buttons-block{
-	display:inline-block;
+div.no-opacity{
+    opacity: 1;
 }
-
-
-
-/* Text header block */
-div.text-block{
-	text-align: left;
-	float:left;
-	max-width: 70%;
-	margin-top: 10px;
+div.opacity-25{
+    opacity: 0.25;
 }
-div.text-block h2{
-	font-family: HelveticaNeueCyrLight;
-	font-size: 2em;
-	color: #dc0917;
-	font-weight: 300;
+div.opacity-50{
+    opacity: 0.5;
 }
-div.text-block h1{
-	font-family:HelveticaNeueCyrLight;
-	font-size: 3.5em;
-	color: #010102;
-	font-weight: 300;
-}
-div.text-block h1 span{
-	color: #dc0917;
-}
-div.text-block p.sub-title{
-	font-family: HelveticaNeueCyrUltraLight;
-	font-size: 2.3em;
-	color: #010102;
-	font-weight: 200;
-}
-/* END */
-
-
-
-
-
-/* Buttons block */
-div.buttons-block{
-	float: right;
-}
-div.buttons-block div.block-1,
-div.buttons-block div.block-2{
-	display: inline;
-}
-
-div.buttons-block div.block-1{
-	float:left;
-}
-div.buttons-block div.block-2{
-	float:right;
-}
-/* END */
-
-
-
-
-
-
-
-/* Buttons appearence */
-div.button{
-	height: 48px;
-	margin-top: 5px;
-}
-div.buttons-block div.block-2 div.button{
-	margin-left:20px;
-}
-
-div.button div.button-icon-circle,
-div.button div.button-text{
-	display: inline;
-}
-
-div.button div.button-icon-circle,
-div.button div.button-icon{
-	background-repeat: no-repeat;
-	background-size: 100%;
-}
-
-div.button div.button-icon-circle{
-	width: 48px;
-	height: 48px;
-	float:left;
-}
-div.button div.button-icon{
-	width:32px;
-	height:32px;
-	position: relative;
-}
-
-div.button.user-signals div.button-icon-circle{
-	background-image: url(../img/usersignals-icon-circle.png);
-}
-div.button.user-signals div.button-icon{
-	background-image: url(../img/usersignals-icon.png);
-	left: 8px;
-	top: 5px;
-}
-
-div.button.social div.button-icon-circle{
-	background-image: url(../img/social-icon-circle.png);
-}
-div.button.social div.button-icon{
-	background-image: url(../img/social-icon.png);
-	left: 11px;
-	top: 11px;
-}
-
-div.button.backlinks div.button-icon-circle{
-	background-image: url(../img/backlinks-icon-circle.png);
-}
-div.button.backlinks div.button-icon{
-	background-image: url(../img/backlinks-icon.png);
-	width: 40px;
-	left: 4px;
-	top: 21px;
-}
-
-div.button.onpage-technical div.button-icon-circle{
-	background-image: url(../img/onpage-technical-icon-circle.png);
-}
-div.button.onpage-technical div.button-icon{
-	background-image: url(../img/onpage-technical-icon.png);
-	left: 8px;
-	top: 11px;
-}
-
-div.button.onpage-content div.button-icon-circle{
-	background-image: url(../img/onpage-content-icon-circle.png);
-}
-div.button.onpage-content div.button-icon{
-	background-image: url(../img/onpage-content-icon.png);
-	left: 11px;
-	top: 6px;
-}
-
-div.button div.button-text{
-	margin-left: 8px;
-	margin-top: 18px;
-	float:left;
-	
-	font-family: HelveticaNeueCyrBold;
-	font-weight:700;
-	font-size:0.9em;
-
-	text-align: left;
-
-}
-
-div.button.user-signals div.button-text,
-div.row.user-signals div.row-description{
-	color: #e97470;
-}
-div.button.social div.button-text,
-div.row.social div.row-description{
-	color: #f4a943;
-}
-div.button.backlinks div.button-text,
-div.row.backlinks div.row-description{
-	color: #478da1;
-}
-div.button.onpage-technical div.button-text,
-div.row.onpage-technical div.row-description{
-	color: #3fa138;
-}
-div.button.onpage-content div.button-text,
-div.row.onpage-content div.row-description{
-	color: #25a5db;
-}
-
-/* END */
-
 
 /* Main container */
 
 div.main-container{
-	padding: 40px 3%;
+/* 	padding: 40px 3%; */
+    padding: 120px 3% 50px 3%;
 }
 
 /* Background grid layer */
@@ -221,19 +48,19 @@ div.grid-background div.vertical-line{
 div.rows-stack{
 	position: relative;
 	width:100%;
-	margin-top: 30px;
+	margin-top: 20px;
 	z-index: 2;
 }
 
 div.row{
-	height:30px;
+	height:20px;
 	width: 100%;
-	margin-top: 35px;
+	margin-top: 20px;
 }
 
 div.row-description,
 div.row-value{
-	height: 30px;
+	height: 20px;
 	display: inline-block;
 	float: left;
 }
@@ -253,7 +80,7 @@ div.row-value p{
 
 div.row-value p{
 	font-family: HelveticaNeueCyrLight;
-	font-size: 1.5em;
+	font-size: 1.15em;
 	font-weight: 300;
 	margin: 3px 5px 0px 0px;
 	color: #fff;
@@ -261,8 +88,8 @@ div.row-value p{
 
 div.row-description p{
     font-family: HelveticaNeueCyrRoman;
-    font-size: 1.12em;
-    margin: 6px 6px 0px 0px;
+    font-size: 1.02em;
+    margin: 4px 5px 0px 0px;
 }
 
 div.row-description div.description-circles p{
@@ -276,7 +103,7 @@ div.row-description div.dot{
     height: 4px;
     float:right;
     margin-right: 8px;
-    margin-top: 13px;
+    margin-top: 8px;
 }
 
 div.row-description div.description-circles{

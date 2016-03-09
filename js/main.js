@@ -5,17 +5,36 @@ $(document).ready(function(){
 });
 
 
-$("div.button").hover(
-	function(){
-		var category = $(this).attr("class").split(" ")[1];
-		$("div.row").css({"opacity" : "0.5"});
-		$("div.row."+category).css({"opacity" : "1"});
-	}, 
-	function(){
-		$("div.row").css({"opacity" : "1"});
-	}
-);
+// $("div.button").hover(
+// 	function(){
+// 		var category = $(this).attr("class").split(" ")[1];
+        
+// 		$("div.row").css({"opacity" : "0.25"});
+// 		$("div.row."+category).css({"opacity" : "1"});
+// 	}, 
+// 	function(){
+// 		$("div.row").css({"opacity" : "1"});
+// 	}
+// );
 
+var lastPressdButton;
+
+$("div.button").click(function(){
+    if (lastPressdButton && lastPressdButton != this){
+        $("div.row").removeClass("opacity-25");
+        $("div.button").removeClass("opacity-50");
+    }
+    var category = $(this).attr("class").split(" ")[1];
+    $("div.row").toggleClass("opacity-25");
+    $("div.button").toggleClass("opacity-50");
+    $("div.row."+category).removeClass("opacity-25");
+    $("div.button."+category).removeClass("opacity-50");
+    lastPressdButton = this;
+});
+
+$("div.button").dblclick(function(){
+    //alert("DBLCLICK");
+});
 
 $(window).resize(function(){
     backgroundGridSetup();
@@ -77,7 +96,7 @@ function displayRows(){
 
 function setCirclesSizes(row, radius){
     $("div.description-circles", row).css({
-        "top" : (radius - 13)*(-1)
+        "top" : (radius - 8)*(-1)
     });
     
     $("div.circle.outer", row).css({
