@@ -4,19 +4,6 @@ $(document).ready(function(){
     prettifyValueNumbers();
 });
 
-
-// $("div.button").hover(
-// 	function(){
-// 		var category = $(this).attr("class").split(" ")[1];
-        
-// 		$("div.row").css({"opacity" : "0.25"});
-// 		$("div.row."+category).css({"opacity" : "1"});
-// 	}, 
-// 	function(){
-// 		$("div.row").css({"opacity" : "1"});
-// 	}
-// );
-
 var lastPressdButton;
 
 $("div.button").click(function(){
@@ -32,9 +19,9 @@ $("div.button").click(function(){
     lastPressdButton = this;
 });
 
-$("div.button").dblclick(function(){
-    //alert("DBLCLICK");
-});
+function showTooltip(rowValueDiv){
+
+}
 
 $(window).resize(function(){
     backgroundGridSetup();
@@ -92,6 +79,39 @@ function displayRows(){
             setDescrPSizes($("div.row[order-number="+(i+1)+"]"),rows[i]["font-sets"]);
         }        
     }
+    
+    $("div.row-value").click(function(){
+        
+        $("div.tooltip").detach();
+
+        var category = $($(this).parent()).attr("class").split(" ")[1];
+        
+        var popupHtml = '\
+            <div class="tooltip '+category+'">\
+                <p>'+rows[$($(this).parent()).attr("order-number")-1]["name"]+'</p>\
+            </div>\
+        ';
+        $("body").append(popupHtml);
+        
+        $("div.tooltip").click(function(){
+            $(this).detach();
+        });
+       
+        
+        $("div.tooltip").css({
+            "position"  :"fixed",
+            "z-index"   : "10",
+            "bottom"    : "70px",
+            "right"     : "70px",
+            "width"     : "300px",
+            "height"    : "100px",
+            "font-family"       : "HelveticaNeueCyrMedium",
+            "font-weight"       : "500",
+            "font-size"         : "1.5em",
+            "text-align"        : "center",
+            "padding"           : "15px"
+        });        
+    });
 }
 
 function setCirclesSizes(row, radius){

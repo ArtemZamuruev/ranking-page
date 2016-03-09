@@ -207,3 +207,39 @@ div.row.onpage-content div.dot{
 
 
 /* END */
+
+
+/* Tooltip */
+
+div.tooltip{
+    border-radius: 20px;
+    border-style: dashed;
+    border-width: 2px;
+}
+
+div.tooltip.user-signals{
+    color: #e97470;
+    background-color: #fae2e1;
+    border-color: #e97470;
+}
+div.tooltip.social{
+    color: #f4a943;
+    border-color: #f4a943;
+}
+div.tooltip.backlinks{
+    color: #478da1;   
+    background-color: #f2f8fa;
+    border-color: #478da1;
+}
+div.tooltip.onpage-technical{
+    color: #3fa138;
+    background-color: #eff5ed;
+    border-color: #3fa138;
+}
+div.tooltip.onpage-content{
+    color: #25a5db;
+    background-color: #e6f3fa;
+    border-color: #25a5db; 
+}
+
+/* END */
