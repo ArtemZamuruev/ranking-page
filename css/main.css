@@ -3,7 +3,7 @@ div.clearfix{
 }
 
 header{
-	padding: 40px 30px;
+	padding: 30px 30px 10px 30px;
 }
 
 hr{
@@ -167,20 +167,25 @@ div.button div.button-text{
 
 }
 
-div.button.user-signals div.button-text{
+div.button.user-signals div.button-text,
+div.row.user-signals div.row-description{
 	color: #e97470;
 }
-div.button.social div.button-text{
+div.button.social div.button-text,
+div.row.social div.row-description{
 	color: #f4a943;
 }
-div.button.backlinks div.button-text{
-	color: #7cc0d1;
+div.button.backlinks div.button-text,
+div.row.backlinks div.row-description{
+	color: #478da1;
 }
-div.button.onpage-technical div.button-text{
-	color: #6cb867;
+div.button.onpage-technical div.button-text,
+div.row.onpage-technical div.row-description{
+	color: #3fa138;
 }
-div.button.onpage-content div.button-text{
-	color: #73caf1;
+div.button.onpage-content div.button-text,
+div.row.onpage-content div.row-description{
+	color: #25a5db;
 }
 
 /* END */
@@ -193,12 +198,6 @@ div.main-container{
 }
 
 /* Background grid layer */
-
-/*div.grid-background{
-	position: relative;
-	z-index: 1;
-	width: 100%;
-}*/
 
 div.grid-background{
 	position: absolute;
@@ -222,14 +221,14 @@ div.grid-background div.vertical-line{
 div.rows-stack{
 	position: relative;
 	width:100%;
-	margin-top: 50px;
+	margin-top: 30px;
 	z-index: 2;
 }
 
 div.row{
 	height:30px;
 	width: 100%;
-	margin-top: 40px;
+	margin-top: 35px;
 }
 
 div.row-description,
@@ -237,8 +236,6 @@ div.row-value{
 	height: 30px;
 	display: inline-block;
 	float: left;
-
-	/*border: 1px dashed black;*/
 }
 
 div.row-description{
@@ -262,22 +259,121 @@ div.row-value p{
 	color: #fff;
 }
 
+div.row-description p{
+    font-family: HelveticaNeueCyrRoman;
+    font-size: 1.12em;
+    margin: 6px 6px 0px 0px;
+}
+
+div.row-description div.description-circles p{
+    font-family: HelveticaNeueCyrMedium;
+    font-size: 0.911em;
+    font-weight: 500;
+}
+
+div.row-description div.dot{
+    width: 4px;
+    height: 4px;
+    float:right;
+    margin-right: 8px;
+    margin-top: 13px;
+}
+
+div.row-description div.description-circles{
+    position: relative;
+    float: right;
+    margin-right: 8px;
+}
+
+div.row-description div.circle{
+    border-radius: 50%;
+    position:relative;
+    top: 5px;
+    left: 5px;
+}
+
+div.row-description div.circle p{
+    position: relative;
+/*     top:5px;
+    left: 5px; */
+    text-align: center;
+}
+
+div.row.user-signals div.circle.outer{
+    background-color: #f2aaab;
+}
+div.row.user-signals div.circle.middle{
+    background-color: #ed8787;
+}
+div.row.user-signals div.circle.inner{
+    background-color: #fae2e1;
+}
+
+/* div.row.social div.circle.outer{
+    background-color: #;
+}
+div.row.social div.circle.middle{
+    background-color: #;
+}
+div.row.social div.circle.inner{
+    background-color: #;
+} */
+
+
+div.row.backlinks div.circle.outer{
+    background-color: #bee1ed;
+}
+div.row.backlinks div.circle.middle{
+    background-color: #7cbdcc;
+}
+div.row.backlinks div.circle.inner{
+    background-color: #f2f8fa;
+}
+
+
+div.row.onpage-technical div.circle.outer{
+    background-color: #cfe3ca;
+}
+div.row.onpage-technical div.circle.middle{
+    background-color: #a6cfa3;
+}
+div.row.onpage-technical div.circle.inner{
+    background-color: #eff5ed;
+}
+
+
+div.row.onpage-content div.circle.outer{
+    background-color: #bae0f5;
+}
+div.row.onpage-content div.circle.middle{
+    background-color: #74c9ed;
+}
+div.row.onpage-content div.circle.inner{
+    background-color: #e6f3fa;
+}
+
 /* Row appearence */
 
-div.row.user-signals div.row-value{
+div.row.user-signals div.row-value,
+div.row.user-signals div.dot
+{
 	background-color: #e97470;
 }
-div.row.social div.row-value{
+div.row.social div.row-value,
+div.row.social div.dot{
 	background-color: #f4a943;
 }
-div.row.backlinks div.row-value{
-	background-color: #7cc0d1;
+div.row.backlinks div.row-value,
+div.row.backlinks div.dot{
+	background-color: #478da1;
 }
-div.row.onpage-technical div.row-value{
-	background-color: #6cb867;
+div.row.onpage-technical div.row-value,
+div.row.onpage-technical div.dot{
+	background-color: #3fa138;
 }
-div.row.onpage-content div.row-value{
-	background-color: #73caf1;
+div.row.onpage-content div.row-value,
+div.row.onpage-content div.dot{
+	background-color: #25a5db;
 }
 
 /* END */
