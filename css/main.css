@@ -212,9 +212,20 @@ div.row.onpage-content div.dot{
 /* Tooltip */
 
 div.tooltip{
-    border-radius: 20px;
+    border-radius: 10px;
     border-style: dashed;
     border-width: 2px;
+    position  :fixed;
+    z-index : 10;
+    bottom : 70px;
+    right : 70px;
+    width : 300px;
+    height : 100px;
+    font-family : HelveticaNeueCyrMedium;
+    font-weight : 500;
+    font-size : 1.3em;
+    text-align : center;
+    padding : 15px;
 }
 
 div.tooltip.user-signals{
@@ -224,6 +235,7 @@ div.tooltip.user-signals{
 }
 div.tooltip.social{
     color: #f4a943;
+    background-color: #FFF8D1;
     border-color: #f4a943;
 }
 div.tooltip.backlinks{

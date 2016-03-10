@@ -55,7 +55,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "65",
         "dots-num"  : "10",
-        "font-sets" : "1.1em;20px;3px"
+        "font-sets" : "1.1em;30px;3px"
 	},
 	{
 		"name" 		: "Tweets",
@@ -87,7 +87,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "60",
         "dots-num"  : "28",
-        "font-sets" : "1.1em;30px;3px"
+        "font-sets" : "1.1em;35px;3px"
 	},
 	{
 		"name" 		: "New backlinks",
@@ -159,7 +159,7 @@ var rows = [
 		"value"		: "0.13",
         "des-type"  : "circle",
         "circle-rad": "55",
-        "dots-num"  : "25",
+        "dots-num"  : "23",
         "font-sets" : "1.1em;10px;3px"
 	},
 	{
@@ -259,7 +259,7 @@ var rows = [
 		"value"		: "0.05",
         "des-type"  : "circle",
         "circle-rad": "50",
-        "dots-num"  : "24",
+        "dots-num"  : "30",
         "font-sets" : "1.3em;15px;3px"
 	},
 	{
@@ -268,8 +268,8 @@ var rows = [
 		"value"		: "0.05",
         "des-type"  : "circle",
         "circle-rad": "45",
-        "dots-num"  : "35",
-        "font-sets" : "1.6em;30px;-22.5px"
+        "dots-num"  : "22",
+        "font-sets" : "1.6em;20px;-12.5px"
 	},
 	{
 		"name" 		: "Description",
@@ -277,8 +277,8 @@ var rows = [
 		"value"		: "0.05",
         "des-type"  : "circle",
         "circle-rad": "45",
-        "dots-num"  : "25",
-        "font-sets" : "0.75em;21px;3px"
+        "dots-num"  : "13",
+        "font-sets" : "0.75em;25px;3px"
 	},
 	{
 		"name" 		: "Video integration",
@@ -293,8 +293,8 @@ var rows = [
 		"value"		: "0.04",
         "des-type"  : "circle",
         "circle-rad": "50",
-        "dots-num"  : "21",
-        "font-sets" : "1.1em;16px;4px"
+        "dots-num"  : "25",
+        "font-sets" : "1.1em;20px;3px"
 	},
 	{
 		"name" 		: "Keyword in Title",

@@ -98,19 +98,19 @@ function displayRows(){
         });
        
         
-        $("div.tooltip").css({
-            "position"  :"fixed",
-            "z-index"   : "10",
-            "bottom"    : "70px",
-            "right"     : "70px",
-            "width"     : "300px",
-            "height"    : "100px",
-            "font-family"       : "HelveticaNeueCyrMedium",
-            "font-weight"       : "500",
-            "font-size"         : "1.5em",
-            "text-align"        : "center",
-            "padding"           : "15px"
-        });        
+        // $("div.tooltip").css({
+        //     "position"  :"fixed",
+        //     "z-index"   : "10",
+        //     "bottom"    : "70px",
+        //     "right"     : "70px",
+        //     "width"     : "300px",
+        //     "height"    : "100px",
+        //     "font-family"       : "HelveticaNeueCyrMedium",
+        //     "font-weight"       : "500",
+        //     "font-size"         : "1.5em",
+        //     "text-align"        : "center",
+        //     "padding"           : "15px"
+        // });        
     });
 }
 
