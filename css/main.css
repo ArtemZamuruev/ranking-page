@@ -121,10 +121,16 @@ div.row-description div.circle{
 
 div.row-description div.circle p{
     position: relative;
-/*     top:5px;
-    left: 5px; */
     text-align: center;
+    margin : 10px;
 }
+
+div.row-description div.circle.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 div.row.user-signals div.circle.outer{
     background-color: #f2aaab;

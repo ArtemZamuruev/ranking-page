@@ -137,8 +137,8 @@ function setDescrPSizes(row, fontsets){
     var params = fontsets.split(";");
     $("div.row-description p", row).css({
         "font-size" : params[0],
-        "top"       : params[1],
-        "left"      : params[2]
+        //"top"       : params[1],
+        //"left"      : params[2]
     });
 }
 

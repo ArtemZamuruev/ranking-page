@@ -78,7 +78,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "55",
         "dots-num"  : "15",
-        "font-sets" : "1.1em;25px;3px"
+        "font-sets" : "1em;25px;3px"
 	},
 	{
 		"name" 		: "Proof terms",
@@ -110,7 +110,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "50",
         "dots-num"  : "18",
-        "font-sets" : "0.9em;3px;2px"
+        "font-sets" : "0.75em;3px;2px"
 	},
 	{
 		"name" 		: "% Backlinks with anchor = domain.com",
@@ -119,7 +119,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "55",
         "dots-num"  : "26",
-        "font-sets" : "0.82em;20px;2px"
+        "font-sets" : "0.75em;20px;2px"
 	},
 	{
 		"name" 		: "Number of internal links",
@@ -144,7 +144,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "50",
         "dots-num"  : "30",
-        "font-sets" : "1em;20px;4px"
+        "font-sets" : "0.9em;20px;4px"
 	},
 	{
 		"name" 		: "HTML length",
@@ -187,7 +187,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "70",
         "dots-num"  : "18",
-        "font-sets" : "1.3em;25px;3px"
+        "font-sets" : "1.2em;25px;3px"
 	},
 	{
 		"name" 		: "Word count in anchor text",
@@ -226,7 +226,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "50",
         "dots-num"  : "24",
-        "font-sets" : "1.3em;15px;3px"
+        "font-sets" : "1.2em;15px;3px"
 	},
 	{
 		"name" 		: "Number of external links",
