@@ -1,13 +1,13 @@
 var rows = [
 	{
-		"name" 		: "Click-Through Rate",
+		"name" 		: "Click Through Rate",
 		"category" 	: "user-signals",
 		"value"		: "0.39",
 		"val-number": "0.67",
         "des-type"  : "circle",
-        "circle-rad": "70",
+        "circle-rad": "60",
         "dots-num"  : "28",
-        "font-sets" : "1.1em;38px;3px"
+        "font-sets" : "1.1em;20px;3px"
 	},
 	{
 		"name" 		: "Relevant terms",
@@ -16,7 +16,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "50",
         "dots-num"  : "6",
-        "font-sets" : "1em;20px;3px"
+        "font-sets" : "1em;25px;3px"
 	},
 	{
 		"name" 		: "Google +1",
@@ -30,7 +30,7 @@ var rows = [
 		"category" 	: "backlinks",
 		"value"		: "0.31",
         "des-type"  : "circle",
-        "circle-rad": "65",
+        "circle-rad": "60",
         "dots-num"  : "32",
         "font-sets" : "1.1em;30px;3px"
 	},
@@ -53,9 +53,9 @@ var rows = [
 		"category" 	: "backlinks",
 		"value"		: "0.26",
         "des-type"  : "circle",
-        "circle-rad": "75",
+        "circle-rad": "65",
         "dots-num"  : "10",
-        "font-sets" : "1.1em;35px;3px"
+        "font-sets" : "1.1em;20px;3px"
 	},
 	{
 		"name" 		: "Tweets",
@@ -78,7 +78,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "55",
         "dots-num"  : "15",
-        "font-sets" : "1.1em;20px;3px"
+        "font-sets" : "1.1em;25px;3px"
 	},
 	{
 		"name" 		: "Proof terms",
@@ -87,7 +87,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "60",
         "dots-num"  : "28",
-        "font-sets" : "1.1em;25px;3px"
+        "font-sets" : "1.1em;30px;3px"
 	},
 	{
 		"name" 		: "New backlinks",
@@ -109,7 +109,7 @@ var rows = [
 		"value"		: "0.17",
         "des-type"  : "circle",
         "circle-rad": "50",
-        "dots-num"  : "15",
+        "dots-num"  : "18",
         "font-sets" : "0.9em;3px;2px"
 	},
 	{
@@ -118,7 +118,7 @@ var rows = [
 		"value"		: "0.16",
         "des-type"  : "circle",
         "circle-rad": "55",
-        "dots-num"  : "25",
+        "dots-num"  : "26",
         "font-sets" : "0.82em;20px;2px"
 	},
 	{
@@ -126,9 +126,9 @@ var rows = [
 		"category" 	: "onpage-content",
 		"value"		: "0.16",
         "des-type"  : "circle",
-        "circle-rad": "75",
-        "dots-num"  : "34",
-        "font-sets" : "1.2em;40px;3px"
+        "circle-rad": "65",
+        "dots-num"  : "36",
+        "font-sets" : "1.2em;30px;3px"
 	},
 	{
 		"name" 		: "% Backlinks with stopwords",
@@ -215,9 +215,9 @@ var rows = [
 		"category" 	: "onpage-content",
 		"value"		: "0.1",
         "des-type"  : "circle",
-        "circle-rad": "80",
-        "dots-num"  : "29",
-        "font-sets" : "1.5em;30px;3px"
+        "circle-rad": "70",
+        "dots-num"  : "32",
+        "font-sets" : "1.3em;30px;3px"
 	},
 	{
 		"name" 		: "Time on site",
@@ -225,8 +225,8 @@ var rows = [
 		"value"		: "0.09",
         "des-type"  : "circle",
         "circle-rad": "50",
-        "dots-num"  : "20",
-        "font-sets" : "1.3em;11px;4px"
+        "dots-num"  : "24",
+        "font-sets" : "1.3em;15px;3px"
 	},
 	{
 		"name" 		: "Number of external links",
@@ -241,8 +241,8 @@ var rows = [
 		"value"		: "0.07",
         "des-type"  : "circle",
         "circle-rad": "65",
-        "dots-num"  : "16",
-        "font-sets" : "1.2em;20px;4px"
+        "dots-num"  : "15",
+        "font-sets" : "1.1em;25px;3px"
 	},
 	{
 		"name" 		: "H2",
@@ -250,8 +250,8 @@ var rows = [
 		"value"		: "0.05",
         "des-type"  : "circle",
         "circle-rad": "40",
-        "dots-num"  : "8",
-        "font-sets" : "1.5em;14px;-8px"
+        "dots-num"  : "6",
+        "font-sets" : "1.5em;15px;-10px"
 	},
 	{
 		"name" 		: "Image count",
@@ -267,9 +267,9 @@ var rows = [
 		"category" 	: "onpage-technical",
 		"value"		: "0.05",
         "des-type"  : "circle",
-        "circle-rad": "55",
-        "dots-num"  : "33",
-        "font-sets" : "1.6em;25px;-20px"
+        "circle-rad": "45",
+        "dots-num"  : "35",
+        "font-sets" : "1.6em;30px;-22.5px"
 	},
 	{
 		"name" 		: "Description",
