@@ -7,7 +7,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "60",
         "dots-num"  : "28",
-        "font-sets" : "1.1em;20px;3px"
+        "font-size" : "1.1em"
 	},
 	{
 		"name" 		: "Relevant terms",
@@ -16,14 +16,14 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "50",
         "dots-num"  : "6",
-        "font-sets" : "1em;25px;3px"
+        "font-size" : "1em"
 	},
 	{
 		"name" 		: "Google +1",
 		"category" 	: "social",
 		"value"		: "0.33",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "Number of backlinks",
@@ -32,21 +32,21 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "60",
         "dots-num"  : "32",
-        "font-sets" : "1.1em;30px;3px"
+        "font-size" : "1.1em"
 	},
 	{
 		"name" 		: "Facebook total",
 		"category" 	: "social",
 		"value"		: "0.28",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "Pintrest",
 		"category" 	: "social",
 		"value"		: "0.27",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "SEO visibility of backlinks URL",
@@ -55,21 +55,21 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "65",
         "dots-num"  : "10",
-        "font-sets" : "1.1em;30px;3px"
+        "font-size" : "1.1em"
 	},
 	{
 		"name" 		: "Tweets",
 		"category" 	: "social",
 		"value"		: "0.24",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "Refering domains",
 		"category" 	: "social",
 		"value"		: "0.23",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "No-follow backlinks",
@@ -78,7 +78,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "55",
         "dots-num"  : "15",
-        "font-sets" : "1em;25px;3px"
+        "font-size" : "1em"
 	},
 	{
 		"name" 		: "Proof terms",
@@ -87,21 +87,21 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "60",
         "dots-num"  : "28",
-        "font-sets" : "1.1em;35px;3px"
+        "font-size" : "1.1em"
 	},
 	{
 		"name" 		: "New backlinks",
 		"category" 	: "backlinks",
 		"value"		: "0.2",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "Backlinks from News Domains",
 		"category" 	: "backlinks",
 		"value"		: "0.2",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "% Backlinks with keywords",
@@ -110,7 +110,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "50",
         "dots-num"  : "18",
-        "font-sets" : "0.75em;3px;2px"
+        "font-size" : "0.75em"
 	},
 	{
 		"name" 		: "% Backlinks with anchor = domain.com",
@@ -119,7 +119,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "55",
         "dots-num"  : "26",
-        "font-sets" : "0.75em;20px;2px"
+        "font-size" : "0.75em"
 	},
 	{
 		"name" 		: "Number of internal links",
@@ -128,14 +128,14 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "65",
         "dots-num"  : "36",
-        "font-sets" : "1.2em;30px;3px"
+        "font-size" : "1.2em"
 	},
 	{
 		"name" 		: "% Backlinks with stopwords",
 		"category" 	: "backlinks",
 		"value"		: "0.16",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "Keywords in body",
@@ -144,14 +144,14 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "50",
         "dots-num"  : "30",
-        "font-sets" : "0.9em;20px;4px"
+        "font-size" : "0.9em"
 	},
 	{
 		"name" 		: "HTML length",
 		"category" 	: "onpage-content",
 		"value"		: "0.14",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "Text character length",
@@ -160,7 +160,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "55",
         "dots-num"  : "23",
-        "font-sets" : "1.1em;10px;3px"
+        "font-size" : "1.1em"
 	},
 	{
 		"name" 		: "Word count",
@@ -169,7 +169,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "50",
         "dots-num"  : "35",
-        "font-sets" : "1.2em;15px;3px"
+        "font-size" : "1.2em"
 	},
 	{
 		"name" 		: "Sitespeed",
@@ -178,7 +178,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "45",
         "dots-num"  : "8",
-        "font-sets" : "0.9em;22px;4px"
+        "font-size" : "0.9em"
 	},
 	{
 		"name" 		: "Keywords in external links",
@@ -187,28 +187,28 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "70",
         "dots-num"  : "18",
-        "font-sets" : "1.2em;25px;3px"
+        "font-size" : "1.2em"
 	},
 	{
 		"name" 		: "Word count in anchor text",
 		"category" 	: "backlinks",
 		"value"		: "0.11",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "Position of keywords in title",
 		"category" 	: "onpage-technical",
 		"value"		: "0.1",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "Length of URL",
 		"category" 	: "onpage-technical",
 		"value"		: "0.1",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "Keywords in internal links",
@@ -217,7 +217,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "70",
         "dots-num"  : "32",
-        "font-sets" : "1.3em;30px;3px"
+        "font-size" : "1.3em"
 	},
 	{
 		"name" 		: "Time on site",
@@ -226,14 +226,14 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "50",
         "dots-num"  : "24",
-        "font-sets" : "1.2em;15px;3px"
+        "font-size" : "1.2em"
 	},
 	{
 		"name" 		: "Number of external links",
 		"category" 	: "onpage-content",
 		"value"		: "0.08",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "Backlinks from same country",
@@ -242,7 +242,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "65",
         "dots-num"  : "15",
-        "font-sets" : "1.1em;25px;3px"
+        "font-size" : "1.1em"
 	},
 	{
 		"name" 		: "H2",
@@ -251,7 +251,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "40",
         "dots-num"  : "6",
-        "font-sets" : "1.5em;15px;-10px"
+        "font-size" : "1.5em"
 	},
 	{
 		"name" 		: "Image count",
@@ -260,7 +260,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "50",
         "dots-num"  : "30",
-        "font-sets" : "1.3em;15px;3px"
+        "font-size" : "1.3em"
 	},
 	{
 		"name" 		: "H1",
@@ -269,7 +269,7 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "45",
         "dots-num"  : "22",
-        "font-sets" : "1.6em;20px;-12.5px"
+        "font-size" : "1.6em"
 	},
 	{
 		"name" 		: "Description",
@@ -278,14 +278,14 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "45",
         "dots-num"  : "13",
-        "font-sets" : "0.75em;25px;3px"
+        "font-size" : "0.75em"
 	},
 	{
 		"name" 		: "Video integration",
 		"category" 	: "onpage-technical",
 		"value"		: "0.04",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "Bounce rate",
@@ -294,27 +294,27 @@ var rows = [
         "des-type"  : "circle",
         "circle-rad": "50",
         "dots-num"  : "25",
-        "font-sets" : "1.1em;20px;3px"
+        "font-size" : "1.1em"
 	},
 	{
 		"name" 		: "Keyword in Title",
 		"category" 	: "onpage-technical",
 		"value"		: "0.02",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "Keyword in H2",
 		"category" 	: "onpage-content",
 		"value"		: "0.02",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	},
 	{
 		"name" 		: "Keyword in Description",
 		"category" 	: "onpage-technical",
 		"value"		: "0.01",
         "des-type"  : "line",
-        "font-sets" : ""
+        "font-size" : ""
 	}
 ];

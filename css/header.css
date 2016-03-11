@@ -60,7 +60,6 @@ div.button div.button-icon{
 }
 
 div.button.user-signals div.button-icon-circle{
-/* 	background-image: url(../img/usersignals-icon-circle.png); */
     background-color: #e97470;
     
 }
@@ -71,7 +70,6 @@ div.button.user-signals div.button-icon{
 }
 
 div.button.social div.button-icon-circle{
-/* 	background-image: url(../img/social-icon-circle.png); */
     background-color: #f4a943;
 }
 div.button.social div.button-icon{
@@ -81,7 +79,6 @@ div.button.social div.button-icon{
 }
 
 div.button.backlinks div.button-icon-circle{
-/* 	background-image: url(../img/backlinks-icon-circle.png); */
     background-color: #478da1;
 }
 div.button.backlinks div.button-icon{
@@ -92,7 +89,6 @@ div.button.backlinks div.button-icon{
 }
 
 div.button.onpage-technical div.button-icon-circle{
-/* 	background-image: url(../img/onpage-technical-icon-circle.png); */
     background-color: #3fa138;
 }
 div.button.onpage-technical div.button-icon{
@@ -102,7 +98,6 @@ div.button.onpage-technical div.button-icon{
 }
 
 div.button.onpage-content div.button-icon-circle{
-/* 	background-image: url(../img/onpage-content-icon-circle.png); */
     background-color: #25a5db;
 }
 div.button.onpage-content div.button-icon{

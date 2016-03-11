@@ -76,7 +76,7 @@ function displayRows(){
         
         if(rows[i]["des-type"] === "circle"){
             setCirclesSizes($("div.row[order-number="+(i+1)+"]"),rows[i]["circle-rad"]); 
-            setDescrPSizes($("div.row[order-number="+(i+1)+"]"),rows[i]["font-sets"]);
+            setDescrPSizes($("div.row[order-number="+(i+1)+"]"),rows[i]["font-size"]);
         }        
     }
     
@@ -95,22 +95,7 @@ function displayRows(){
         
         $("div.tooltip").click(function(){
             $(this).detach();
-        });
-       
-        
-        // $("div.tooltip").css({
-        //     "position"  :"fixed",
-        //     "z-index"   : "10",
-        //     "bottom"    : "70px",
-        //     "right"     : "70px",
-        //     "width"     : "300px",
-        //     "height"    : "100px",
-        //     "font-family"       : "HelveticaNeueCyrMedium",
-        //     "font-weight"       : "500",
-        //     "font-size"         : "1.5em",
-        //     "text-align"        : "center",
-        //     "padding"           : "15px"
-        // });        
+        });       
     });
 }
 
@@ -133,12 +118,9 @@ function setCirclesSizes(row, radius){
     });
 }
 
-function setDescrPSizes(row, fontsets){
-    var params = fontsets.split(";");
+function setDescrPSizes(row, fontsize){
     $("div.row-description p", row).css({
-        "font-size" : params[0],
-        //"top"       : params[1],
-        //"left"      : params[2]
+        "font-size" : fontsize
     });
 }
 
@@ -149,7 +131,7 @@ function prettifyValueNumbers(){
             $("p", valueRows[i]).css({
                 "position" : "relative",
                 "left" : ($("p", valueRows[i]).width()+10)+"px",
-                "color": "#121212"
+                "color": "#333333"
             });
         }
     }
