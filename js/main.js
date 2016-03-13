@@ -77,7 +77,15 @@ function displayRows(){
         if(rows[i]["des-type"] === "circle"){
             setCirclesSizes($("div.row[order-number="+(i+1)+"]"),rows[i]["circle-rad"]); 
             setDescrPSizes($("div.row[order-number="+(i+1)+"]"),rows[i]["font-size"]);
-        }        
+        }
+
+
+        
+        if (i === 0){
+            var whitespaceImg = '<img src="img/whitespace.png" style="float:right; margin-right:10px"></img>';
+            $("div.row[order-number=1] div.row-value p").before(whitespaceImg);
+        }
+
     }
     
     $("div.row-value").click(function(){
