@@ -28,7 +28,21 @@ $(window).resize(function(){
 });
 
 
-function displayRows(){
+function displayRows(){ 
+    
+    rows.sort(function (a,b){
+            a = parseInt(a["order-num"], 10);
+            b = parseInt(b["order-num"], 10);
+            if (a > b)
+                return 1;
+            else
+                if (a < b)
+                    return -1;
+                else
+                    return 0;
+        }
+    );
+    
     for (var i = 0; i < rows.length; i++){
 
         var visibleValue;
