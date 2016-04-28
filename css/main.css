@@ -7,6 +7,10 @@ hr{
 	color: #e1e1e1;
 }
 
+div.invisible{
+    display: none;
+}
+
 div.no-opacity{
     opacity: 1;
 }
@@ -20,7 +24,6 @@ div.opacity-50{
 /* Main container */
 
 div.main-container{
-/* 	padding: 40px 3%; */
     padding: 120px 3% 50px 3%;
 }
 
@@ -33,7 +36,8 @@ div.grid-background{
 	width: 100%;
 }
 
-div.grid-background div.vertical-line{
+div.grid-background div.vertical-line,
+div.grid-background-popup div.vertical-line-popup{
 	display: inline-block;
 	float: left;
 	height:100%;
@@ -141,16 +145,6 @@ div.row.user-signals div.circle.middle{
 div.row.user-signals div.circle.inner{
     background-color: #fae2e1;
 }
-
-/* div.row.social div.circle.outer{
-    background-color: #;
-}
-div.row.social div.circle.middle{
-    background-color: #;
-}
-div.row.social div.circle.inner{
-    background-color: #;
-} */
 
 
 div.row.backlinks div.circle.outer{
@@ -261,3 +255,30 @@ div.tooltip.onpage-content{
 }
 
 /* END */
+
+
+/*POPUP*/
+
+div.popup{
+    top: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+    position:fixed;
+}
+
+div.popup div.popup-content{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+div.horizontal-scale-line-popup{
+    position: absolute;
+    width: 97%;
+    margin-left: 1.5%;
+    height: 3px;
+    bottom:67px;
+    background-color: #b1b1b1;
+}
+
+/*END POPUP*/

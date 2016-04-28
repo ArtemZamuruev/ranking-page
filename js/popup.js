@@ -1,63 +1,11 @@
-$(document).ready(function(){	
-    displayRows();
-    backgroundGridSetup();
-    backgroundGridSetupPopup();
-    prettifyValueNumbers();
-    setPopupSize();
-});
-
-
-
-var lastPressdButton;
-
-$("div.button").click(function(){
-    if (lastPressdButton && lastPressdButton != this){
-        $("div.row").removeClass("opacity-25");
-        $("div.button").removeClass("opacity-50");
-    }
-    var category = $(this).attr("class").split(" ")[1];
-    $("div.row").toggleClass("opacity-25");
-    $("div.button").toggleClass("opacity-50");
-    $("div.row."+category).removeClass("opacity-25");
-    $("div.button."+category).removeClass("opacity-50");
-    lastPressdButton = this;
-});
-
-$("div.button").dblclick(function(){
-    var buttonClass = $(this).attr("class");
-    if(buttonClass == "button ru" || buttonClass == "button en"){
-        return;
-    }
-    $("div.popup").removeClass("invisible");
-});
-
-window.onkeyup = function(e) {
-   var key = e.keyCode ? e.keyCode : e.which;
-   if (key == 27) {
-       if($("div.popup").attr("class").indexOf("invisible") == -1){
-           $("div.popup").addClass("invisible");
-       }
-       else{
-           return;
-       }
-   }
-}
-
-function setPopupSize(){
-    $("div.popup").css({
-        "width" : $(window).width()+"px",
-        "height": $(window).height()+"px"
-    });
-}
-
-$(window).resize(function(){
-    backgroundGridSetup();
-    backgroundGridSetupPopup();
-    setPopupSize();
-});
-
-
-function displayRows(){ 
+/**
+* Created with Ranking Show.
+* User: ArtemZamuruev
+* Date: 2016-04-13
+* Time: 07:23 AM
+* To change this template use Tools | Templates.
+*/
+function displayRowsOnPopup(){ 
     
     rows.sort(function (a,b){
             a = parseInt(a["order-num"], 10);
@@ -152,52 +100,12 @@ function displayRows(){
     });
 }
 
-function setCirclesSizes(row, radius){
-    $("div.description-circles", row).css({
-        "top" : (radius - 8)*(-1)
-    });
+function backgroundGridSetupPopup(){
+    var screenHeight = $(window).height();
+    var screenWidth = $(window).width();
     
-    $("div.circle.outer", row).css({
-        "width" : radius*2,
-        "height": radius*2
-    });
-    $("div.circle.middle", row).css({
-        "width" : radius*2-10,
-        "height": radius*2-10
-    });
-    $("div.circle.inner", row).css({
-        "width" : radius*2-20,
-        "height": radius*2-20
-    });
-}
-
-function setDescrPSizes(row, fontsize){
-    $("div.row-description p", row).css({
-        "font-size" : fontsize
-    });
-}
-
-function prettifyValueNumbers(){
-    var valueRows = $("div.row-value");
-    for (var i = 0; i < valueRows.length; i++){
-        if ($("p", valueRows[i]).width()+10 >= $(valueRows[i]).width()){
-            $("p", valueRows[i]).css({
-                "position" : "relative",
-                "left" : ($("p", valueRows[i]).width()+10)+"px",
-                "color": "#333333"
-            });
-        }
-    }
-}
-
-function backgroundGridSetup(){
-    var rowsDivHeight = $("div.rows-stack").height();
+    $("div.grid-background-popup").css({"height" : screenHeight-50});
+    $("div.vertical-line-popup").css({"margin-left" : (screenWidth-74)/13+"px"});
+    $("div.vertical-line-popup:nth-child(1)").css({"margin-left" : "30px"});
     
-    $("div.grid-background").css({"top": $("header").outerHeight()+30});
-	$("div.grid-background").css({"height" : rowsDivHeight+100});
-    
-    var scrWidth = $("div.grid-background").width();
-    
-    $("div.vertical-line").css({"margin-left": (scrWidth-74)/13+"px"});
-    $("div.vertical-line:nth-child(1)").css({"margin-left":"30px"});
 }

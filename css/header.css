@@ -5,6 +5,16 @@
     Description: NEW header CSS
 */
 
+a{
+    color: #333333;
+    text-decoration: none;
+}
+a:visited{
+    text-decoration:none;
+    color: #333333;
+}
+
+
 header{
     position: fixed;
     top: 0px;
@@ -34,6 +44,10 @@ div.buttons-block div.button{
     height:48px;
     width:200px;
     
+}
+
+body.ru div.buttons-block div.button{
+    width:280px;
 }
 
 div.button div.button-icon-circle,
@@ -107,8 +121,8 @@ div.button.onpage-content div.button-icon{
 }
 
 div.button div.button-text{
-	margin-left: 8px;
-	margin-top: 18px;
+	margin-left: 10px;
+	margin-top: 16px;
 	float:left;
 	
 	font-family: HelveticaNeueCyrBold;
@@ -117,6 +131,18 @@ div.button div.button-text{
 
 	text-align: left;
 
+}
+
+div.button.ru div.button-text{
+    float:right;
+    margin-right:20px;
+}
+body.ru div.buttons-block div.button.en{
+    width: 100px;
+}
+body.ru div.buttons-block div.button.en div.button-text{
+    float:right;
+    margin-right: 20px;
 }
 
 div.button.user-signals div.button-text,
@@ -138,6 +164,10 @@ div.row.onpage-technical div.row-description{
 div.button.onpage-content div.button-text,
 div.row.onpage-content div.row-description{
 	color: #25a5db;
+}
+
+body.ru div.row div.row-description{
+    color: #333333;
 }
 
 /* END */
