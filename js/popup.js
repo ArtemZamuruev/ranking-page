@@ -5,7 +5,7 @@
 * Time: 07:23 AM
 * To change this template use Tools | Templates.
 */
-function displayRowsOnPopup(){ 
+function displayRowsOnPopup(category){ 
     
     rows.sort(function (a,b){
             a = parseInt(a["order-num"], 10);
@@ -20,84 +20,72 @@ function displayRowsOnPopup(){
         }
     );
     
-    for (var i = 0; i < rows.length; i++){
+
+    var rowsToDisplayOnPopup = [];
+
+    for (var i= 0; i < rows.length; i++){
+        if (rows[i]["category"] == category){
+            rowsToDisplayOnPopup.push(rows[i]);
+            console.log(rows[i]);
+        }
+    }
+
+    for (var i = 0; i < rowsToDisplayOnPopup.length; i++){
 
         var visibleValue;
-        if (rows[i]["val-number"]){
-            visibleValue = rows[i]["val-number"];
+        if (rowsToDisplayOnPopup[i]["val-number"]){
+            visibleValue = rowsToDisplayOnPopup[i]["val-number"];
         }
         else{
-            visibleValue = rows[i]["value"];
+            visibleValue = rowsToDisplayOnPopup[i]["value"];
         }
         
-        var descrHtml = "";
-       
-        if (rows[i]["des-type"] === "line"){
-            descrHtml = '<p>'+rows[i]["name"]+'</p>';
-        }
-        else{         
-            for (var d = 0; d < rows[i]["dots-num"]; d++){
-                descrHtml += '<div class = "dot"></div>';
-            }
-            
-            descrHtml += '\
-              <div class="description-circles">\
-                <div class="circle outer">\
-                    <div class="circle middle">\
-                        <div class="circle inner">\
-                            <p>'+rows[i]["name"]+'</p>\
-                        </div>\
-                    </div>\
-                </div>\
-              </div>\
-            ';
-        }
+        var descrHtml = '<p>'+rowsToDisplayOnPopup[i]["name"]+'</p>';
 
         var rowHTML = '\
-            <div class="row '+rows[i]["category"]+'" order-number="'+(i+1)+'">\
+            <div class="row '+rowsToDisplayOnPopup[i]["category"]+'" order-number="'+(i+1)+'">\
                 <div class="row-description">'+descrHtml+'</p></div>\
-                <div class="row-value" value="'+rows[i]["value"]+'"><p>'+visibleValue+'</p></div>\
+                <div class="row-value" value="'+rowsToDisplayOnPopup[i]["value"]+'"><p>'+visibleValue+'</p></div>\
             </div>\
         ';
-        $("div.rows-stack").append(rowHTML);
+        $("div.popup-rows-stack").append(rowHTML);
         
-        var rowLengthInPercent = ((rows[i]["value"]*0.9*0.55)/0.4)*100;
+        var rowLengthInPercent = ((rowsToDisplayOnPopup[i]["value"]*0.9*0.55)/0.4)*100;
         
         $("div.row[order-number="+(i+1)+"] div.row-value").css({"width": rowLengthInPercent+"%"});
-        
-        if(rows[i]["des-type"] === "circle"){
-            setCirclesSizes($("div.row[order-number="+(i+1)+"]"),rows[i]["circle-rad"]); 
+
+        if(rowsToDisplayOnPopup[i]["font-size"]){
+            setDescrPSizes($("div.row[order-number="+(i+1)+"]"),rowsToDisplayOnPopup[i]["font-size"]);
         }
 
-        if(rows[i]["font-size"]){
-            setDescrPSizes($("div.row[order-number="+(i+1)+"]"),rows[i]["font-size"]);
-        }
-
-        
-        if (i === 0){
-            var whitespaceImg = '<img src="img/whitespace.png" style="float:right; margin-right:10px"></img>';
-            $("div.row[order-number=1] div.row-value p").before(whitespaceImg);
-        }
+        // Добавление белой волнистой полосы на первой строке графика        
+        // if (i === 0){
+        //     var whitespaceImg = '<img src="img/whitespace.png" style="float:right; margin-right:10px"></img>';
+        //     $("div.row[order-number=1] div.row-value p").before(whitespaceImg);
+        // }
 
     }
     
-    $("div.row-value").click(function(){
-        
-        $("div.tooltip").detach();
 
-        var category = $($(this).parent()).attr("class").split(" ")[1];
+    prettifyValueNumbers();
+
+    // $("div.row-value").click(function(){
         
-        var popupHtml = '\
-            <div class="tooltip '+category+'">\
-                <p>'+rows[$($(this).parent()).attr("order-number")-1]["name"]+'</p>\
-            </div>\
-        ';
-        $("body").append(popupHtml);
+    //     $("div.tooltip").detach();
+
+    //     var category = $($(this).parent()).attr("class").split(" ")[1];
         
-        $("div.tooltip").click(function(){
-            $(this).detach();
-        });       
-    });
+    //     var popupHtml = '\
+    //         <div class="tooltip '+category+'">\
+    //             <p>'+rows[$($(this).parent()).attr("order-number")-1]["name"]+'</p>\
+    //         </div>\
+    //     ';
+    //     $("body").append(popupHtml);
+        
+    //     $("div.tooltip").click(function(){
+    //         $(this).detach();
+    //     });       
+    // });
 }
 
 function backgroundGridSetupPopup(){
@@ -108,4 +96,8 @@ function backgroundGridSetupPopup(){
     $("div.vertical-line-popup").css({"margin-left" : (screenWidth-74)/13+"px"});
     $("div.vertical-line-popup:nth-child(1)").css({"margin-left" : "30px"});
     
+}
+
+function clearPopupRowsStack(){
+    $("div.popup-rows-stack").empty();
 }

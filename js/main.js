@@ -2,7 +2,6 @@ $(document).ready(function(){
     displayRows();
     backgroundGridSetup();
     backgroundGridSetupPopup();
-    prettifyValueNumbers();
     setPopupSize();
 });
 
@@ -11,6 +10,10 @@ $(document).ready(function(){
 var lastPressdButton;
 
 $("div.button").click(function(){
+    var buttonClass = $(this).attr("class");
+    if(buttonClass == "button ru" || buttonClass == "button en"){
+        return;
+    }
     if (lastPressdButton && lastPressdButton != this){
         $("div.row").removeClass("opacity-25");
         $("div.button").removeClass("opacity-50");
@@ -28,6 +31,9 @@ $("div.button").dblclick(function(){
     if(buttonClass == "button ru" || buttonClass == "button en"){
         return;
     }
+    var category = $(this).attr("class").split(" ")[1];
+    clearPopupRowsStack();
+    displayRowsOnPopup(category);
     $("div.popup").removeClass("invisible");
 });
 
@@ -130,12 +136,11 @@ function displayRows(){
             var whitespaceImg = '<img src="img/whitespace.png" style="float:right; margin-right:10px"></img>';
             $("div.row[order-number=1] div.row-value p").before(whitespaceImg);
         }
-
     }
     
     $("div.row-value").click(function(){
         
-        $("div.tooltip").detach();
+        $("div.tooltip").detach();ONPAGE
 
         var category = $($(this).parent()).attr("class").split(" ")[1];
         
@@ -150,6 +155,9 @@ function displayRows(){
             $(this).detach();
         });       
     });
+
+    prettifyValueNumbers();
+
 }
 
 function setCirclesSizes(row, radius){
